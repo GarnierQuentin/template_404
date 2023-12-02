@@ -1,0 +1,115 @@
+<!-- Egsagon - 2023 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Advent 404 - jour #4</title>
+    <link rel="shortcut icon" href="src/icon.svg">
+
+    <style>
+        :root {
+            /* Couleurs */
+
+            --primary: #ED414E;
+            --dim: #090001;
+            --black: #000;
+            --white: #fff;
+
+            /* Paramètres */
+
+            --is-light-scheme: 0; /* Color scheme (0 ou 1) */
+            --can-dim-be-bg: 0;   /* Si --dim est adapté pour être un fond (0 ou 1) */ 
+            --logo-border-radius: 55px;
+            
+            /* Images a mettre dans le slide */
+            --slide-count: 3; /* Max 10 */
+            --slide-width: 600px;
+
+            /* Répeter 2 fois pour le scroll */
+            --slides: url('src/image-1.jpg'), url('src/image-2.jpg'), url('src/image-3.jpg'),
+                    url('src/image-1.jpg'), url('src/image-2.jpg'), url('src/image-3.jpg');
+            
+            --banner: url('src/Banner.png')
+        }
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="snow.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <a href="/"><h1><i class="fa-solid fa-angle-left"></i>Jour <span>#4</span></h1></a>
+
+    <div class="discover">
+        <h3>Tape le cadeau !</h3>
+        <div id="present" class="glow">
+            <div class="bkt bkt1 glow"></div>
+            <div class="bkt bkt2 glow"></div>
+        </div>
+
+        <div id="pres">
+            <div class="glow">
+                <img id="logo" src="src/Logo.png">
+            </div>
+            
+            <!--
+                Nom de l'asso
+                Partie importante de l'asso en span (nombres, chars speciaux, , etc.)
+            -->
+            <h3>DEV<span>/</span>INCI</h3>
+            <p>
+                <!--
+                    Description super courte en quelques mots
+                -->
+                L'asso placeholder du Pôle qui fait des trucs cools
+                
+                <br>
+                <br>
+                Scroll pour en savoir plus ! 
+            </p>
+        </div>
+    </div>
+
+    <div id="content">
+        <!-- Description longue -->
+        <pre><div id="banner"></div>
+DEV/INCI, c'est la fausse association de développement web du Pôle ! En effet c'est une association "exemple" pour vous permettre de tester votre template. Vous pouvez donc utiliser cette description pour tester le responsive de votre site, ou même savoir s'il supporte les emojis ✨
+
+💡 Notez que certaines assos nous ont envoyés des description super courtes! Certaines faisant que une dizaines de mots (pratique pour un texte qui défile par exemple). D'autres nous ont envoyés des pavés (un peu plus compliqué à l'intégré dans un site :/ ). C'est pour ça que cette description est longue, vous pouvez donc tester votre template avec des textes courts ou même laisser des emplacements pour des paragraphes.
+
+Bien evidement on se chargera de raccourcir les textes que nous ont envoyés les assos (ou de les allonger) en fonction du template que tu nous rendras, donc ne te soucis pas des textes!
+
+    >>> Code, Responsive, Amuse-toi!
+
+👾 Bref, on a hâte de voir ce que vous allez nous cook!
+        </pre>
+
+        <div class="socials">
+
+            <h4>Leurs réseaux</h4>
+            <div>
+                <!-- Liens réseaux (FA6) -->
+                <a href="https://www.facebook.com/La404Devinci" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/la404.devinci/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/la-404-devinci" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <div class="slider">
+            <div class="wrap">
+                <div class="images"></div>
+            </div>
+        </div>
+
+        <p id="creds">Made with <i class="fa-solid fa-heart"></i> by <a href="https://github.com/Egsagon" target="_blank">Egsagon</a> // 404 Devinci</p>
+    </div>
+
+    <div id="snow">
+        <div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div><div class="snow"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

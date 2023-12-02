@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins|Pixelify Sans');
+
+:root{
+    --primary: #ED414E;
+    --secondary: #090001;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: aliceblue;
+}
+
+body{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: var(--secondary);
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+
+.jour{
+    font-size: 2vw;
+    position: absolute;
+    top: 1%;
+    right: 0%;
+    border: 4px solid var(--primary);
+    padding: 2%;
+    border-radius: 10px;
+}
+
+
+.prez{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 5%;
+    height: 100vh;
+}
+
+
+
+
+
+.left_part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    height: 100%;
+}
+
+
+.logo{
+    width: 100%;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.right_part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1.3vw;
+    height: 100%;
+}
+
+
+.medias{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.icons{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+    transition: all 0.1S linear;
+}
+
+.icons img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.icons img:hover{
+    cursor: pointer;
+    transition: all 0.1S linear;
+    transform: scale(1.2,1.2);
+}
+
+.name{
+    margin-bottom: 2%;
+}
+
+.bio{
+    margin-top: 2%;
+}
+
+.discover{
+    margin-top: 50%;
+    padding: 10%;
+    font-size: 2vw;
+    border-radius: 1000px;
+    transition: all 0.3S linear;
+    width: 120%;
+    color: black;
+}
+
+.discover:hover{
+    cursor: pointer;
+    background-color: var(--primary);
+    color: #fff;
+    transition: all 0.3S linear;
+    transform: scale(1.1,1.1);
+}
+
+
+
+.second_part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    gap: 10%;
+}
+
+
+#all_caroussels{
+    display: flex;
+    width: 100%;
+    align-items: bottom;
+    bottom: 5%;
+}
+
+
+.content{
+    font-size: 2vw;
+    text-align: justify;
+    border: #ED414E 5px solid;
+    border-radius: 50px;
+    padding: 3%;
+}
+
+.credit{
+    position: absolute;
+    bottom: 2%;
+    left: 35%;
+}
